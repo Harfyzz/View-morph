@@ -12,6 +12,9 @@
 		34740F6C2C1EC75300584DF6 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34740F6B2C1EC75300584DF6 /* Item.swift */; };
 		34740F6E2C1EC75400584DF6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34740F6D2C1EC75400584DF6 /* Assets.xcassets */; };
 		34740F712C1EC75400584DF6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34740F702C1EC75400584DF6 /* Preview Assets.xcassets */; };
+		34740F782C1EC77E00584DF6 /* Switch cards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34740F772C1EC77E00584DF6 /* Switch cards.swift */; };
+		34740F7A2C1F34B700584DF6 /* AiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34740F792C1F34B700584DF6 /* AiView.swift */; };
+		34740F7C2C1F390300584DF6 /* AiLaunch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34740F7B2C1F390300584DF6 /* AiLaunch.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +24,9 @@
 		34740F6B2C1EC75300584DF6 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		34740F6D2C1EC75400584DF6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		34740F702C1EC75400584DF6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		34740F772C1EC77E00584DF6 /* Switch cards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Switch cards.swift"; sourceTree = "<group>"; };
+		34740F792C1F34B700584DF6 /* AiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AiView.swift; sourceTree = "<group>"; };
+		34740F7B2C1F390300584DF6 /* AiLaunch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AiLaunch.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +61,9 @@
 			children = (
 				34740F672C1EC75300584DF6 /* PlaygroundApp.swift */,
 				34740F692C1EC75300584DF6 /* ContentView.swift */,
+				34740F772C1EC77E00584DF6 /* Switch cards.swift */,
+				34740F792C1F34B700584DF6 /* AiView.swift */,
+				34740F7B2C1F390300584DF6 /* AiLaunch.swift */,
 				34740F6B2C1EC75300584DF6 /* Item.swift */,
 				34740F6D2C1EC75400584DF6 /* Assets.xcassets */,
 				34740F6F2C1EC75400584DF6 /* Preview Content */,
@@ -140,7 +149,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34740F782C1EC77E00584DF6 /* Switch cards.swift in Sources */,
 				34740F6A2C1EC75300584DF6 /* ContentView.swift in Sources */,
+				34740F7C2C1F390300584DF6 /* AiLaunch.swift in Sources */,
+				34740F7A2C1F34B700584DF6 /* AiView.swift in Sources */,
 				34740F6C2C1EC75300584DF6 /* Item.swift in Sources */,
 				34740F682C1EC75300584DF6 /* PlaygroundApp.swift in Sources */,
 			);
