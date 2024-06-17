@@ -25,7 +25,7 @@ struct PlaygroundApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            AiLaunch()
         }
         .modelContainer(sharedModelContainer)
     }

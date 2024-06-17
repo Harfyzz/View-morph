@@ -16,21 +16,30 @@ struct AiView: View {
     var body: some View {
         VStack{
             Spacer()
-            
+            HStack{
+                Spacer()
+            Image(systemName: "xmark")
+                .padding()
+                .foregroundStyle(.black)
+                .background(.white)
+                .clipShape(Circle())
+            }.padding(.trailing, 16)
+            .onTapGesture {
+                withAnimation(.spring(duration: 0.4, bounce: 0.3)) {
+                    openAi = false
+                }
+            }
             VStack(spacing:72){
                 VStack{
                     Circle()
                         .matchedGeometryEffect(id: "circle", in: Namespace)
                         .frame(width: 72)
-                        .onTapGesture {
-                            withAnimation(.spring(duration: 0.4, bounce: 0.3)) {
-                                openAi = false
-                            }
-                        }
+                        
                     
                     VStack(spacing:16){
                         Text("How can I help?")
                             .font(.title2)
+                            .transitUpwards(trigger: openAi)
                         
                     }
                 }
@@ -51,17 +60,31 @@ struct AiView: View {
                 }
                 .background(Color("bg"))
                 .clipShape(RoundedRectangle(cornerRadius: 44))
+                .transitSideways(trigger: openAi)
             }
             .padding(16)
             .background(RoundedRectangle(cornerRadius: 24)
                 .foregroundStyle(.white)
                 .matchedGeometryEffect(id: "bg", in: Namespace2))
-            .padding(16)
-            .clipped()
-            .padding(.bottom, 16)
+            .padding(.horizontal, 16)
+            .padding(.bottom, 32)
         }.background(.gray.opacity(0.4))
             .ignoresSafeArea()
         
+    }
+}
+
+extension View {
+    func transitUpwards (trigger:Bool) -> some View {
+        self
+            .offset(y: trigger ? 0 : -44)
+            .opacity( trigger ? 1:0)
+        
+    }
+    func transitSideways (trigger:Bool) -> some View {
+        self
+            .offset(x: trigger ? 0 : 200)
+            .opacity( trigger ? 1:0)
     }
 }
 /*
